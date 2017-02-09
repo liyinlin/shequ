@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+			body{display: none;position: relative;}
+			html,body{width: 100%;height: 100%;}
+			html{font-size: 100px;}
+			html,body,a,ul,ol,p,div,img,span,li{margin: 0;padding: 0;font-family: "微软雅黑";font-size: 0.16rem;}
+			img{border: 0;}
+			a{text-decoration: none;}
+			ul,ol{list-style: none;}
+			
+			/*头部部分*/
+			#l_firsthead{width: 100%;background: #007af4;overflow: hidden;padding: 0.3rem 0;color: #fff;}
+			#l_firheaimg{float: left;margin:0.11rem 0 0 0.2rem;width: 0.4rem;height: 0.24rem;}
+			#l_firsthead span{display: block;width: 1.5rem;margin: 0.04rem auto 0;font-size: 0.34rem;font-weight: 400;text-align: center;}
+			.l_firheari{float: right;margin-right: 0.2rem;}
+			.l_firheari img{width: 0.35rem;height: 0.41rem;margin-right: 0.1rem;}
+			.l_firheari a{color: #FFFFFF;font-size: 0.3rem;}
+			/*搜索栏*/
+			.l_firsearch{width: 100%;}
+			#l_firsearchtex{padding-left:0.62rem;border: 0.01rem solid #ccc;border-radius: 0.1rem;
+				background: url(img/sq_jz_lb_r.png) 0.1rem 0.06rem no-repeat;width: 4rem;height: 0.58rem;line-height: 0.58rem;
+				font-size: 0.28rem;color: #b3b3b3;margin: 0.15rem  0.1rem 0.12rem;outline:medium;}
+			#l_firsearchbut{width: 1.42rem;height: 0.52rem;background: #007af4;border-radius: 0.1rem;outline:medium;
+				text-align: center;line-height: 0.52rem;border: none;font-size: 0.24rem;color: #FFFFFF;margin-left: -0.1rem;}
+			/*大图滚动*/
+			#l_firstdatu{width: 100%;height: 3rem;position: relative;}
+			#l_firdatuimg img{position: absolute;left: 0;top: 0;width: 100%;height: 3rem;}
+			#l_firdatuul{position: absolute;bottom: 0.18rem;right: 0.13rem;overflow: hidden;}
+			#l_firdatuul li{width: 0.14rem;height: 0.14rem;float: left;
+				border-radius: 50%;background: #fff;margin-left: 0.12rem;}
+			#l_firdatuul .l_datuli01{background: #4c93eb;}
+			/*天气栏*/
+			.l_weather{width: 100%;height: 1rem;background: #f5f5f5;color: #666666;}
+			.l_weatherle{width: 0.59rem;height: 0.48rem;float: left;margin: 0.26rem 0.27rem 0.28rem 0.26rem;}
+			.l_weathercen{float: left;margin: 0.22rem 0;}
+			.l_weathercen span{font-size: 0.24rem;}
+			.l_weathercen p{font-size: 0.2rem;margin-top: 0.1rem;}
+			.l_weatherri{float: right;font-size: 0.24rem;margin: 0.22rem 0.2rem 0.19rem 0;}
+			.l_weatherri p{margin-bottom: 0.1rem;}
+			.l_weatherri p,.l_weatherri span{font-size: 0.24rem;}
+			/*选项栏*/
+			.l_select{width: 100%;overflow: hidden;border-bottom: 0.01rem solid #dedede;border-top: 0.01rem solid #dedede;}
+			.l_select li{float:left;width: 2.07rem;height: 1.83rem;text-align: center;}
+			.l_select li img{width: 1.04rem;height: 1.04rem;margin: 0.26rem 0 0.1rem;}
+			.l_select li:nth-child(1),.l_select li:nth-child(2),.l_select li:nth-child(3){border-bottom: 0.01rem solid #DEDEDE;}
+			.l_select li a{color: #333333;font-size: 0.24rem;}
+			.l_select02{border-left: 0.01rem solid #DEDEDE;border-right: 0.01rem solid #DEDEDE;}
+			/*侧栏*/
+			#l_zhenglan{position: absolute;left: 0;top: 0;width: 100%;}
+			#l_firstcelan{width: 3.74rem;color: #FFFFFF;height: 100%;position: absolute;
+				left:-3.74rem;top: 0;background: #007af4;padding: 0.1rem 0;}
+			.l_touxiang{margin: 0.46rem 0;}
+			.l_touxiang span{font-size: 0.36rem;letter-spacing: -0.02rem;}
+			.l_touxiang img{width: 0.99rem;height: 0.99rem;vertical-align: middle;margin:0 0.1rem 0 0.44rem;}
+			#l_celanul{margin-left: 0.32rem;}
+			#l_celanul li{width: 3.13rem;height: 0.57rem;line-height: 0.57rem;margin-bottom: 0.34rem;padding-left: 0.1rem;}
+			#l_celanul li img{width: 0.44rem;height: 0.44rem;margin-right: 0.32rem; vertical-align: middle;margin-top: -0.055rem;}
+			#l_celanul li a{font-size: 0.3rem;color: #FFFFFF}
+			#l_celanul .l_celanli10{margin-bottom:0.72rem ;}
+			.l_celanli10 img{width: 0.49rem;height: 0.35rem;}
+			.l_celanli01{background: #1e4a9e;border: 0.02rem solid #1a88f5;border-radius: 0.3rem;}
+			/*侧栏动画*/
+			@-webkit-keyframes celant{
+				from{left: -3.74rem;}
+				to{left: 0rem;}
+			}
+			@-webkit-keyframes celanf{
+				from{left: 0;}
+				to{left: -3.74rem;}
+			}
+			/*正栏动画*/
+			@-webkit-keyframes zhenglant{
+				from{left: 0rem;}
+				to{left: 3.74rem;}
+			}
+			@-webkit-keyframes zhenglanf{
+				from{left: 3.74rem;}
+				to{left: 0rem;}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="l_zhenglan">
+			<!--头部部分-->
+			<header id="l_firsthead">
+				<img src="img/xsq_firstline_l.png" id="l_firheaimg"/>
+				<p class="l_firheari"><img src="img/xsq_headerlocal.png"/><a href="javascript:;">北京</a></p>
+				<span>龙山家园</span>
+			</header>
+			<!--搜索栏-->
+			<div class="l_firsearch">
+				<input type="text" id="l_firsearchtex" value="" placeholder="Search" />
+				<input type="button" id="l_firsearchbut" value="我要发布" />
+			</div>
+			<!--大图滚动-->
+			<div id="l_firstdatu">
+				<div id="l_firdatuimg">
+					<img src="img/xsq_banner1.png"/>
+					<img src="img/xsq_banner2.png"/>
+					<img src="img/xsq_banner1.png"/>
+				</div>
+				<ul id="l_firdatuul">
+					<li class="l_datuli01"></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<!--天气栏-->
+			<div class="l_weather">
+				<img src="img/xsq_cloud.png" class="l_weatherle"/>
+				<div class="l_weathercen">
+					<span>多云/小雨  </span><span>27/30C</span>
+					<p>3-4级/4-5级风</p>
+				</div>
+				<div class="l_weatherri">
+					<p>星期一</p>
+					<span>18:00</span>
+				</div>
+			</div>
+			<!--选项栏-->
+			<ul class="l_select">
+				<li>
+					<a href="">
+						<img src="img/xsq_dh1.png"/>
+						<p>找家教</p>
+					</a>
+				</li>
+				<li class="l_select02">
+					<a href="">
+						<img src="img/xsq_dh2.png"/>
+						<p>送水到家</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/xsq_dh3.png"/>
+						<p>维修服务</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/xsq_dh4.png"/>
+						<p>家政</p>
+					</a>
+				</li>
+				<li class="l_select02">
+					<a href="">
+						<img src="img/xsq_dh5.png"/>
+						<p>社区互动</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/xsq_dh6.png"/>
+						<p>更多服务</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--侧栏-->
+		<div id="l_firstcelan">
+			<div class="l_touxiang">
+				<img src="img/banner_title.png"/>
+				<span>iViperious</span>
+			</div>
+			<ul id="l_celanul">
+				<li class="l_celanli01"><a href="java:;"><img src="img/banner_t1.png" alt="" />找家教</a></li>
+				<li><a href="java:;"><img src="img/banner_t2.png" alt="" />送水到家</a></li>
+				<li><a href="java:;"><img src="img/banner_t3.png" alt="" />维修服务</a></li>
+				<li><a href="java:;"><img src="img/banner_t4.png" alt="" />家政服务</a></li>
+				<li><a href="java:;"><img src="img/banner_t5.png" alt="" />社区互动</a></li>
+				<li><a href="java:;"><img src="img/banner_t6.png" alt="" />消息中心</a></li>
+				<li><a href="java:;"><img src="img/banner_t7.png" alt="" />我的收藏</a></li>
+				<li><a href="java:;"><img src="img/banner_t8.png" alt="" />我的发布</a></li>
+				<li class="l_celanli10"><a href="java:;"><img src="img/banner_t9.png" alt="" />账号设置</a></li>
+				<li><a href="java:;"><img src="img/banner_close.png" alt="" />退出登录</a></li>
+				
+			</ul>
+		</div>
+	</body>
+    <script src="jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var html=document.getElementsByTagName("html")[0];
+		var bod=document.getElementsByTagName("body")[0];
+		function getFontSize(){
+			var width=document.documentElement.clientWidth||document.body.clientWidth;
+			var fontSize=(100/640)*width;
+			return fontSize;
+		}
+		html.style.fontSize=getFontSize()+"px"; 
+		window.onload=function(){
+			html.style.fontSize=getFontSize()+"px";
+			bod.style.display='block';
+		}	
+//		大图滚动
+	$(function(){
+			var $imgcount = 0;
+			var $timer,$timer2;
+			$timer = setInterval(run,3000);
+			function run(){
+				$imgcount ++;
+				if($imgcount >2){
+					$imgcount = 0;
+				}
+				$("#l_firdatuimg img").eq($imgcount).fadeIn("fast").siblings().hide();
+				$('#l_firdatuul li').eq($imgcount).addClass('l_datuli01').siblings().removeClass('l_datuli01');
+				
+			}//大图透明度变化的自动走函数
+
+			function runL(){
+				if($imgcount >2){
+					$imgcount = 0;
+				}
+				if($imgcount <0){
+					$imgcount = 2;
+				}
+				$("#l_firdatuimg img").eq($imgcount).fadeIn("fast").siblings().hide();
+				$('#l_firdatuul li').eq($imgcount).addClass('l_datuli01').siblings().removeClass('l_datuli01');
+				$imgcount ++;
+			}
+			//往左走的函数
+			function runR(){
+				if($imgcount <0){
+					$imgcount = 2;
+				}
+				if($imgcount >2){
+					$imgcount = 0;
+				}
+				$("#l_firdatuimg img").eq($imgcount).fadeIn("fast").siblings().hide();
+				$('#l_firdatuul li').eq($imgcount).addClass('l_datuli01').siblings().removeClass('l_datuli01');
+				$imgcount --;
+			}
+			//往右走的函数
+			var $startX,$startY,isMove = false;
+			$("#l_firdatuimg")[0].addEventListener("touchstart",function(event){
+				event.preventDefault();  //取消默认事件
+				var touch = event.changedTouches[0];  //返回第一次触摸的位置
+				$startX = touch.pageX;  //page相对于整体页面的位置，不是相对于屏幕的位置
+				$startY = touch.pageY;
+				isMove = false;
+				clearInterval($timer);
+			},false);
+			
+			$("#l_firdatuimg")[0].addEventListener("touchmove",function(event){
+				event.preventDefault();
+				isMove = true;
+			},false);
+			
+			$("#l_firdatuimg")[0].addEventListener("touchend",function(event){
+				event.preventDefault();
+				var touch = event.changedTouches[0];
+				var $endX = touch.pageX;
+				var $endY = touch.pageY;
+				if(isMove==false){
+					return;
+				}
+				if($startX - $endX > 0){
+					runL();
+					$timer = setInterval(runL,3000);
+				}else{
+					runR();
+					$timer = setInterval(runR,3000);
+				}
+			},false);
+			//这段代码是手指往左右滑的函数原理就是跟咱们的拖拽一样的原理先记录开始的位置然后记录结束的位置一旦结束大于开始的位置就是手指往左滑的一旦相反就是往右滑这是原生的写法.
+		});
+//	侧栏
+	var tt=true;
+	$('#l_firheaimg').click(function(){
+		if(tt){
+			$('#l_firstcelan').css({'-webkit-animation':'celant 2s','-webkit-animation-fill-mode':'forwards'});
+			$('#l_zhenglan').css({'-webkit-animation':'zhenglant 2s','-webkit-animation-fill-mode':'forwards'});
+			tt=false;
+		}else{
+			$('#l_firstcelan').css({'-webkit-animation':'celanf 1s','-webkit-animation-fill-mode':'forwards'});
+			$('#l_zhenglan').css({'-webkit-animation':'zhenglanf 1s','-webkit-animation-fill-mode':'forwards'});
+			tt=true;
+		}
+		})
+//侧栏tab切换
+		$('#l_celanul li').click(function(){
+			var l_i=$('#l_celanul li').index(this);
+			$('#l_celanul li').eq(l_i).addClass('l_celanli01').siblings().removeClass('l_celanli01');
+		})
+
+	</script>
+</html>

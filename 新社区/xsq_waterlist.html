@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+			body{display: none;position: relative;}
+			html,body{width: 100%;height: 100%;}
+			html{font-size: 100px;}
+			html,body,a,ul,ol,p,div,img,span,li,select,optgroup,option{margin: 0;padding: 0;font-family: "微软雅黑";font-size: 0.16rem;}
+			img{border: 0;}
+			a{text-decoration: none;}
+			ul,ol{list-style: none;}
+			
+			/*头部部分*/
+			#l_shcanghead{width: 100%;background: #007af4;overflow: hidden;padding: 0.3rem 0;color: #fff;}
+			#l_shcangheaimg{float: left;margin:0.06rem 0 0 0.2rem;width: 0.18rem;height: 0.33rem;}
+			#l_shcanghead span{display: block;width: 1.5rem;margin: 0.04rem auto 0;text-align: center;font-size: 0.34rem;
+				font-weight: 400;}
+			/*下拉栏*/
+			.l_jiazh_list{width: 6.36rem;margin: 0 auto;padding: 0 0.02rem;overflow: hidden;}
+			.l_jiazh_list select{width:2.12rem ;color: #aeaca7;float: left;border: none;border-bottom: 0.01rem solid #dedede;
+				height: 0.65rem;line-height: 0.65rem;text-align: center;padding-left: 0.46rem;font-size: 0.22rem;}
+			.l_jiazh_list .l_jiazhlist02{border-left: 0.01rem solid #dedede;border-right: 0.01rem solid #dedede;}
+			/*内容1*/
+			.l_waterlist01{width: 96%;margin: 0 auto;overflow: hidden;padding: 0.15rem 0 0.18rem;
+				border-bottom: 0.01rem solid #dedede;position: relative;}
+			.l_waterlistle{float: left;width: 1.72rem;height: 1.27rem;}
+			.l_waterlistri{float: right;width: 4.15rem;}
+			.l_waterlistriP1{font-size: 0.22rem;font-weight: 400;}
+			.l_waterlistriP1 img{width: 1.12rem;height: 0.37rem;vertical-align: middle;margin-left: 0.1rem;}
+			.l_waterlistriP2,.l_waterlistriP3{color: #9a9a9a;}
+			.l_waterlistriP2{margin: 0.1rem 0;}
+			.l_waterlistriP3 img{width: 0.21rem;height: 0.25rem;vertical-align: middle;margin-right: 0.1rem;}
+			.l_waterlistriP4{width: 0.67rem;height: 0.67rem;text-align: center;line-height: 0.67rem;
+				background: #fbfbfb;border: 0.01rem solid #DEDEDE;border-radius: 50%;position: absolute;right: 0.2rem;top: 0.15rem;}
+			.l_waterlistphone{width: 0.31rem;height: 0.31rem;vertical-align: middle;}
+			.l_waterlist200{position: absolute;right: 0.14rem;top: 0.9rem;font-size: 0.24rem;color: #9a9a9a;}
+		</style>
+	</head>
+	<body>
+		<!--头部部分-->
+		<header id="l_shcanghead">
+			<img src="img/sq_jz_lb_l.png" id="l_shcangheaimg"/>
+			<span>送水到家</span>
+		</header>
+		<!--下拉栏-->
+		<div class="l_jiazh_list">
+			<select name="水站">
+				<option value="">水站</option>
+				<option value="">农夫山泉水站</option>
+				<option value="">冰露水站</option>
+				<option value="">百岁山水站</option>
+			</select>
+			<select name="区域" class="l_jiazhlist02">
+				<option value="">区域</option>
+				<option value="">石景山区</option>
+				<option value="">顺义</option>
+				<option value="">大兴</option>
+				<option value="">通州</option>
+				<option value="">昌平</option>
+				<option value="">密云</option>
+			</select>
+			<select name="智能排序">
+				<option value="">智能排序</option>
+				<option value="">服务态度</option>
+				<option value="">距离</option>
+				<option value="">价格</option>
+			</select>
+		</div>
+		<!--内容1-->
+		<div class="l_waterlist01">
+			<img src="img/xsq_sz1.png" class="l_waterlistle"/>
+			<div class="l_waterlistri">
+				<p class="l_waterlistriP1">农夫山泉水站<img src="img/xsq_xj.png"/></p>
+				<p class="l_waterlistriP2">用一份良心，送一份纯净，农夫山泉<br />老百姓最放心的桶装水。。</p>
+				<p class="l_waterlistriP3"><img src="img/oooooo_03.png"/>石景山古城地铁北星座大厦201</p>
+				<p class="l_waterlistriP4"><a href="tel:10076328"><img src="img/xsq_telephone.png" class="l_waterlistphone"/></a></p>
+				<span class="l_waterlist200">200米</span>
+			</div>
+		</div>
+		<div class="l_waterlist01">
+			<img src="img/xsq_sz2.png" class="l_waterlistle"/>
+			<div class="l_waterlistri">
+				<p class="l_waterlistriP1">冰露水站<img src="img/xsq_xj.png"/></p>
+				<p class="l_waterlistriP2">用一份良心，送一份纯净，农夫山泉<br />老百姓最放心的桶装水。。</p>
+				<p class="l_waterlistriP3"><img src="img/oooooo_03.png"/>石景山古城地铁北星座大厦201</p>
+				<p class="l_waterlistriP4"><a href="tel:10076328"><img src="img/xsq_telephone.png" class="l_waterlistphone"/></a></p>
+				<span class="l_waterlist200">200米</span>
+			</div>
+		</div>
+		<div class="l_waterlist01">
+			<img src="img/xsq_sz3.png" class="l_waterlistle"/>
+			<div class="l_waterlistri">
+				<p class="l_waterlistriP1">百岁山水站<img src="img/xsq_xj.png"/></p>
+				<p class="l_waterlistriP2">用一份良心，送一份纯净，农夫山泉<br />老百姓最放心的桶装水。。</p>
+				<p class="l_waterlistriP3"><img src="img/oooooo_03.png"/>石景山古城地铁北星座大厦201</p>
+				<p class="l_waterlistriP4"><a href="tel:10076328"><img src="img/xsq_telephone.png" class="l_waterlistphone"/></a></p>
+				<span class="l_waterlist200">200米</span>
+			</div>
+		</div>
+		<div class="l_waterlist01">
+			<img src="img/xsq_sz4.png" class="l_waterlistle"/>
+			<div class="l_waterlistri">
+				<p class="l_waterlistriP1">冰露水站<img src="img/xsq_xj.png"/></p>
+				<p class="l_waterlistriP2">用一份良心，送一份纯净，农夫山泉<br />老百姓最放心的桶装水。。</p>
+				<p class="l_waterlistriP3"><img src="img/oooooo_03.png"/>石景山古城地铁北星座大厦201</p>
+				<p class="l_waterlistriP4"><a href="tel:10076328"><img src="img/xsq_telephone.png" class="l_waterlistphone"/></a></p>
+				<span class="l_waterlist200">200米</span>
+			</div>
+		</div>
+		<div class="l_waterlist01">
+			<img src="img/xsq_sz5.png" class="l_waterlistle"/>
+			<div class="l_waterlistri">
+				<p class="l_waterlistriP1">冰露水站<img src="img/xsq_xj.png"/></p>
+				<p class="l_waterlistriP2">用一份良心，送一份纯净，农夫山泉<br />老百姓最放心的桶装水。。</p>
+				<p class="l_waterlistriP3"><img src="img/oooooo_03.png"/>石景山古城地铁北星座大厦201</p>
+				<p class="l_waterlistriP4"><a href="tel:10076328"><img src="img/xsq_telephone.png" class="l_waterlistphone"/></a></p>
+				<span class="l_waterlist200">200米</span>
+			</div>
+		</div>
+		<div class="l_waterlist01" style="border-bottom: none;">
+			<img src="img/xsq_sz3.png" class="l_waterlistle"/>
+			<div class="l_waterlistri">
+				<p class="l_waterlistriP1">冰露水站<img src="img/xsq_xj.png"/></p>
+				<p class="l_waterlistriP2">用一份良心，送一份纯净，农夫山泉<br />老百姓最放心的桶装水。。</p>
+				<p class="l_waterlistriP3"><img src="img/oooooo_03.png"/>石景山古城地铁北星座大厦201</p>
+				<p class="l_waterlistriP4"><a href="tel:10076328"><img src="img/xsq_telephone.png" class="l_waterlistphone"/></a></p>
+				<span class="l_waterlist200">200米</span>
+			</div>
+		</div>
+		
+	</body>
+    <script src="jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var html=document.getElementsByTagName("html")[0];
+		var bod=document.getElementsByTagName("body")[0];
+		function getFontSize(){
+			var width=document.documentElement.clientWidth||document.body.clientWidth;
+			var fontSize=(100/640)*width;
+			return fontSize;
+		}
+		html.style.fontSize=getFontSize()+"px"; 
+		window.onload=function(){
+			html.style.fontSize=getFontSize()+"px";
+			bod.style.display='block';
+		}
+
+	</script>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+			body{display: none;position: relative;}
+			html,body{width: 100%;height: 100%;}
+			html{font-size: 100px;}
+			html,body,a,ul,ol,p,div,img,span,li,select,optgroup,option{margin: 0;padding: 0;font-family: "微软雅黑";font-size: 0.16rem;}
+			img{border: 0;}
+			a{text-decoration: none;}
+			ul,ol{list-style: none;}
+			
+			/*头部部分*/
+			#l_shcanghead{width: 100%;background: #007af4;overflow: hidden;padding: 0.3rem 0;color: #fff;}
+			#l_shcangheaimg{float: left;margin:0.06rem 0 0 0.2rem;width: 0.18rem;height: 0.33rem;}
+			#l_shcanghead span{display: block;width: 1.5rem;margin: 0.04rem auto 0;text-align: center;font-size: 0.34rem;
+				font-weight: 400;}
+			.l_shcangheari{float: right;margin-right: 0.2rem;width: 0.33rem;height: 0.34rem;margin-top: 0.08rem;}
+			/*下拉栏*/
+			.l_jiazh_list{width: 6.36rem;margin: 0 auto;padding: 0 0.02rem;overflow: hidden;}
+			.l_jiazh_list select{width:2.12rem ;color: #aeaca7;float: left;border: none;border-bottom: 0.01rem solid #dedede;
+				height: 0.65rem;line-height: 0.65rem;text-align: center;padding-left: 0.46rem;font-size: 0.22rem;}
+			.l_jiazh_list .l_jiazhlist02{border-left: 0.01rem solid #dedede;border-right: 0.01rem solid #dedede;}
+			/*内容1*/
+			.l_jiazhlist01{width: 100%;border-top: 0.09rem solid #F5F5F5;overflow: hidden;}
+			.l_jianzhlistle{width: 1.19rem;height:1.24rem;float: left;margin: 0.17rem 0.2rem 0 0.15rem;}
+			.l_jiazhlistri{float: right;width: 4.77rem;border-bottom: 0.01rem solid #F5F5F5;margin-top: 0.17rem;position: relative;}
+			.l_jiazhxxriP1{font-size: 0.2rem;font-weight: 400;}
+			.l_jiazhxxriP1 img{width: 0.57rem;height: 0.31rem;vertical-align: middle;margin: -0.05rem 0 0 0.15rem;}
+			.l_jiazhxxriP2{color: #9a9a9a;margin: 0.12rem 0;}
+			.l_jiazhlistriP3{color: #9a9a9a;}
+			.l_jiazhxxriP4{color:#9a9a9a;position: absolute;top: 0;right: 0.2rem;}
+			.l_jiazhxxriP4 span{font-size:0.24rem ;color: #ff6600;}
+			.l_jiazhxxriP5{overflow: hidden;}
+			.l_jiazhxxriP5 span{color: #a6a6a6;font-size: 0.18rem;display: inline-block;height:0.33rem ;line-height: 0.34rem;float: left;margin-left: 0.1rem;}
+			.l_jiazhxxriP5 img:nth-child(1){width: 1.32rem;height: 0.33rem;float: left;}
+			.l_jiazhxxriP5 img:nth-child(2){width: 0.65rem;height: 0.33rem;float: left;}		
+			.l_jiazhlistlocal{display: block;width: 1.32rem;height: 0.33rem;float: right;clear: both;margin-right: 0.1rem;}
+		</style>
+	</head>
+	<body>
+		<!--头部部分-->
+		<header id="l_shcanghead">
+			<img src="img/sq_jz_lb_l.png" id="l_shcangheaimg"/>
+			<img src="img/sq_jz_lb_r.png" class="l_shcangheari"/>
+			<span>月嫂</span>
+		</header>
+		<!--下拉栏-->
+		<div class="l_jiazh_list">
+			<select name="籍贯">
+				<option value="">籍贯</option>
+				<option value="">北京</option>
+				<option value="">河北</option>
+				<option value="">山东</option>
+				<option value="">河南</option>
+				<option value="">山西</option>
+				<option value="">深圳</option>
+				<option value="">辽宁</option>
+				<option value="">厦门</option>
+				<option value="">上海</option>
+				<option value="">陕西</option>
+				<option value="">四川</option>
+				<option value="">安徽</option>
+				<option value="">福建</option>
+				<option value="">甘肃</option>
+				<option value="">湖南</option>
+				<option value="">湖北</option>
+			</select>
+			<select name="工资" class="l_jiazhlist02">
+				<option value="">工资</option>
+				<option value="">2000以下</option>
+				<option value="">2000-3000</option>
+				<option value="">3000-4000</option>
+				<option value="">4000-5000</option>
+				<option value="">5000-6000</option>
+				<option value="">6000以上</option>
+			</select>
+			<select name="年龄">
+				<option value="">年龄</option>
+				<option value="">18-25岁</option>
+				<option value="">25-35岁</option>
+				<option value="">35-45岁</option>
+				<option value="">45-55岁</option>
+				<option value="">55岁-60岁</option>
+				<option value="">60岁以上</option>
+			</select>
+		</div>
+		<!--内容1-->
+		<div class="l_jiazhlist01">
+			<img src="img/sq_jz_lb_photo.png" class="l_jianzhlistle"/>
+			<div class="l_jiazhlistri">
+				<p class="l_jiazhxxriP1">王语嫣<img src="img/sq_jz_lb_xtb1.png"/></p>
+				<p class="l_jiazhxxriP2">南京 | 47岁 | 大专 | 3年经营</p>
+				<p class="l_jiazhlistriP3">曾辉毕业于河北师范大学，资深的数学高级教师，毕业于师范大学，曾经带过两届高三班，讲课细致耐心学生都很喜欢他的课....</p>
+				<p class="l_jiazhxxriP4"><span>￥160</span>/小时</p>
+				<p class="l_jiazhxxriP5"><img src="img/sq_jz_lb_xtb2.png"/><img src="img/sq_jz_lb_xtb3.png"/><span>120</span></p>
+			</div>
+			<img src="img/sq_jz_lb_xtb4.png" class="l_jiazhlistlocal"/>
+		</div>
+		<div class="l_jiazhlist01">
+			<img src="img/sq_jz_lb_photo.png" class="l_jianzhlistle"/>
+			<div class="l_jiazhlistri">
+				<p class="l_jiazhxxriP1">王语嫣<img src="img/sq_jz_lb_xtb1.png"/></p>
+				<p class="l_jiazhxxriP2">南京 | 47岁 | 大专 | 3年经营</p>
+				<p class="l_jiazhlistriP3">曾辉毕业于河北师范大学，资深的数学高级教师，毕业于师范大学，曾经带过两届高三班，讲课细致耐心学生都很喜欢他的课....</p>
+				<p class="l_jiazhxxriP4"><span>￥160</span>/小时</p>
+				<p class="l_jiazhxxriP5"><img src="img/sq_jz_lb_xtb2.png"/><img src="img/sq_jz_lb_xtb3.png"/><span>120</span></p>
+			</div>
+			<img src="img/sq_jz_lb_xtb4.png" class="l_jiazhlistlocal"/>
+		</div>
+		<div class="l_jiazhlist01">
+			<img src="img/sq_jz_lb_photo.png" class="l_jianzhlistle"/>
+			<div class="l_jiazhlistri">
+				<p class="l_jiazhxxriP1">王语嫣<img src="img/sq_jz_lb_xtb1.png"/></p>
+				<p class="l_jiazhxxriP2">南京 | 47岁 | 大专 | 3年经营</p>
+				<p class="l_jiazhlistriP3">曾辉毕业于河北师范大学，资深的数学高级教师，毕业于师范大学，曾经带过两届高三班，讲课细致耐心学生都很喜欢他的课....</p>
+				<p class="l_jiazhxxriP4"><span>￥160</span>/小时</p>
+				<p class="l_jiazhxxriP5"><img src="img/sq_jz_lb_xtb2.png"/><img src="img/sq_jz_lb_xtb3.png"/><span>120</span></p>
+			</div>
+			<img src="img/sq_jz_lb_xtb4.png" class="l_jiazhlistlocal"/>
+		</div>
+		<div class="l_jiazhlist01">
+			<img src="img/sq_jz_lb_photo.png" class="l_jianzhlistle"/>
+			<div class="l_jiazhlistri">
+				<p class="l_jiazhxxriP1">王语嫣<img src="img/sq_jz_lb_xtb1.png"/></p>
+				<p class="l_jiazhxxriP2">南京 | 47岁 | 大专 | 3年经营</p>
+				<p class="l_jiazhlistriP3">曾辉毕业于河北师范大学，资深的数学高级教师，毕业于师范大学，曾经带过两届高三班，讲课细致耐心学生都很喜欢他的课....</p>
+				<p class="l_jiazhxxriP4"><span>￥160</span>/小时</p>
+				<p class="l_jiazhxxriP5"><img src="img/sq_jz_lb_xtb2.png"/><img src="img/sq_jz_lb_xtb3.png"/><span>120</span></p>
+			</div>
+			<img src="img/sq_jz_lb_xtb4.png" class="l_jiazhlistlocal"/>
+		</div>
+		<div class="l_jiazhlist01" style="padding-bottom: 0.2rem;">
+			<img src="img/sq_jz_lb_photo.png" class="l_jianzhlistle"/>
+			<div class="l_jiazhlistri">
+				<p class="l_jiazhxxriP1">王语嫣<img src="img/sq_jz_lb_xtb1.png"/></p>
+				<p class="l_jiazhxxriP2">南京 | 47岁 | 大专 | 3年经营</p>
+				<p class="l_jiazhlistriP3">曾辉毕业于河北师范大学，资深的数学高级教师，毕业于师范大学，曾经带过两届高三班，讲课细致耐心学生都很喜欢他的课....</p>
+				<p class="l_jiazhxxriP4"><span>￥160</span>/小时</p>
+				<p class="l_jiazhxxriP5"><img src="img/sq_jz_lb_xtb2.png"/><img src="img/sq_jz_lb_xtb3.png"/><span>120</span></p>
+			</div>
+			<img src="img/sq_jz_lb_xtb4.png" class="l_jiazhlistlocal"/>
+		</div>
+		
+	</body>
+    <script src="jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var html=document.getElementsByTagName("html")[0];
+		var bod=document.getElementsByTagName("body")[0];
+		function getFontSize(){
+			var width=document.documentElement.clientWidth||document.body.clientWidth;
+			var fontSize=(100/640)*width;
+			return fontSize;
+		}
+		html.style.fontSize=getFontSize()+"px"; 
+		window.onload=function(){
+			html.style.fontSize=getFontSize()+"px";
+			bod.style.display='block';
+		}
+
+	</script>
+</html>

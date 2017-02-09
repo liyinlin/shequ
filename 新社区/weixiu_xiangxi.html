@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+			body{display: none;position: relative;}
+			html,body{width: 100%;height: 100%;}
+			html{font-size: 100px;}
+			html,body,a,ul,ol,p,div,img,span,li{margin: 0;padding: 0;font-family: "微软雅黑";font-size: 0.16rem;}
+			img{border: 0;}
+			a{text-decoration: none;}
+			ul,ol{list-style: none;}
+			
+			/*头部部分*/
+			#l_shcanghead{width: 100%;background: #007af4;overflow: hidden;padding: 0.3rem 0;color: #fff;}
+			#l_shcangheaimg{float: left;margin:0.06rem 0 0 0.2rem;width: 0.18rem;height: 0.33rem;}
+			#l_shcanghead span{display: block;width: 1.5rem;margin: 0.04rem auto 0;text-align: center;font-size: 0.34rem;font-weight: 400;}
+			.l_shcangheari{float: right;margin-right: 0.2rem;width: 0.37rem;height: 0.41rem;}
+			/*第一个栏目*/
+			.l_weixiuxx01{width: 6.22rem;border-left: 0.09rem solid #f5f5f5;border-right: 0.09rem solid #f5f5f5;
+				border-top: 0.13rem solid #f5f5f5;margin: 0 auto;}
+			.l_weixiuxxP1{font-size: 0.22rem;padding:0.35rem 0.3rem 0.23rem;border-bottom: 0.01rem solid #dedede;}
+			.l_weixiuxxP1 img{float: right;width: 1.12rem;height: 0.37rem;vertical-align: middle;}
+			/*第二个栏目*/
+			.l_weixiuxx02{width: 6.22rem;border-left: 0.09rem solid #f5f5f5;border-right: 0.09rem solid #f5f5f5;margin: 0 auto;
+				border-bottom: 0.13rem solid #f5f5f5;color: #9A9A9A;font-size: 0.22rem;padding: 0.26rem 0 0.15rem;overflow: hidden;}
+			.l_weixiuxx02P1{margin-left: 0.26rem;}
+			.l_weixiuxx02P1 img{width: 0.14rem;height: 0.18rem;margin-right: 0.1rem;}	
+			.l_weixiuxx02P2,.l_weixiuxx02P3{margin-left: 0.5rem;}
+			.l_weixiuxx02P3{font-size: 0.2rem;}
+			.l_weixiuxx02P4{float: right;margin: 0.55rem 0.3rem 0 0;overflow: hidden;}
+			.l_weixiuxx02P4 img:nth-child(1){width: 1.32rem;height: 0.33rem;float: left}	
+			.l_weixiuxx02P4 img:nth-child(2){width: 0.65rem;height: 0.33rem;float: left;}	
+			.l_weixiuxx02P4 span{color: #a6a6a6;font-size: 0.18rem;display: inline-block;height:0.33rem ;line-height: 0.34rem;float: left;margin-left: 0.1rem;}	
+			.l_jiazhxxribut01,.l_jiazhxxribut02{width: 1.14rem;height: 0.41rem;line-height: 0.41rem;display: inline-block;
+				border: 0;font-size: 0.2rem;color: #FFFFFF;font-weight: 400;text-align: center;margin: 0.15rem 0;border-radius: 0.05rem;}
+			.l_jiazhxxribut01{background: #86d855;margin-right: 0.1rem;margin-left: 0.5rem;}
+			.l_jiazhxxribut02{background: #75bcff;}
+			/*第三个项目*/
+			.l_waterxx03{width: 6.22rem;border-left: 0.09rem solid #f5f5f5;border-right: 0.09rem solid #f5f5f5;margin: 0 auto;}
+			.l_waterxx03p1{font-size: 0.24rem;border-bottom: 0.01rem solid #dedede;padding: 0.15rem 0 0.15rem 0.3rem;}
+			.l_waterxx03ul{font-size: 0.2rem;color: #9a9a9a ;padding: 0.32rem 0 1.14rem 0.5rem;}
+			/*第四个栏目*/
+			.l_jiazhxxdiv03{width:97.1875% ;border-top: 0.13rem solid #f5f5f5;border-bottom: 0.13rem solid #f5f5f5;
+				border-left: 0.09rem solid #f5f5f5;border-right: 0.09rem solid #f5f5f5;margin: 0 auto;}
+			.l_jiazhxx0301P img{float: right;width: 1rem;height: 0.35rem;}
+			.l_jiazhxx0301P{font-size: 0.24rem;padding: 0.15rem 0 0.15rem 0.1rem;border-bottom: 0.01rem solid #dedede;}
+			.l_jiazhxx0301{overflow: hidden;padding: 0.16rem 0;}
+			.l_jiazh0301le{float: left;width: 0.76rem;height: 0.76rem;margin-left: 0.15rem;}
+			.l_jiazh0301ri{float:right;width: 5.09rem;border-bottom: 0.01rem solid #dedede;padding-bottom: 0.2rem;}
+			.l_jiazh0301ri p:nth-child(1){font-size: 0.2rem;font-weight: 400;color: #525252;margin-bottom: 0.15rem;}
+			.l_jiazh0301ri p:nth-child(1) span{float: right;margin-right: 0.2rem;font-size: 0.18rem;color: #CCCCCC;}
+			.l_jiazh0301ri p:nth-child(2){color: #666666;}
+			/*尾部*/
+			.l_jiazhxxfoot{width: 100%;padding: 0.2rem 0 0.08rem;background: #f5f5f5;}
+			.l_jiazhxxfoot a{display: inline-block;color: #333333;font-size: 0.2rem;text-align: center;}
+			.l_jiazhxxfoot a:nth-child(1){width: 1.9rem;border: 0.01rem solid #ff6600;background: #FFFFFF;height: 0.52rem;
+				line-height: 0.52rem;border-radius: 0.1rem;margin: 0 0.1rem 0 0.1rem;}
+			.l_jiazhxxfoot a:nth-child(2){width: 4.17rem;height: 0.49rem;background: #ff6600;color: #FFFFFF;
+				border-radius: 0.1rem;line-height: 0.49rem;}
+			
+		</style>
+	</head>
+	<body>
+		<!--头部部分-->
+		<header id="l_shcanghead">
+			<img src="img/sq_jz_lb_l.png" id="l_shcangheaimg"/>
+			<img src="img/xsq_people.png" class="l_shcangheari"/>
+			<span>商家详情</span>
+		</header>
+		<!--第一个栏目-->
+		<div class="l_weixiuxx01">
+			<p class="l_weixiuxxP1">百佳手机维修中心<img src="img/xsq_xj.png"/></p>
+		</div>
+		<!--第二个栏目-->
+		<div class="l_weixiuxx02">
+			<p class="l_weixiuxx02P1"><img src="img/oooooo_03.png"/>距你3.8公里</p>
+			<p class="l_weixiuxx02P2">石景山区石景山路总工会2层前行</p>
+			<p class="l_weixiuxx02P3">营业时间：09:00-18:00</p>
+			<a href="" class="l_jiazhxxribut01">关注</a> <a href="" class="l_jiazhxxribut02">向Ta提问</a>
+			<p class="l_weixiuxx02P4"><img src="img/sq_jz_lb_xtb2.png"/><img src="img/sq_jz_lb_xtb3.png"/><span>120</span></p>
+		</div>
+		<!--第三个栏目-->
+		<div class="l_waterxx03">
+			<p class="l_waterxx03p1">商家信息</p>
+			<ul class="l_waterxx03ul">
+				<li>百佳手机维修中心服务品质保证，服务项目有手机维修、</li>
+				<li>家电维修、数据恢复服务项目有手机维修、家电维修、</li>
+				<li>数据恢复......</li>
+			</ul>
+		</div>
+		<!--第四个栏目-->
+		<div class="l_jiazhxxdiv03">
+			<p class="l_jiazhxx0301P">TA们都在说<img src="img/xsq_write.png" alt="" /></p>
+			<div class="l_jiazhxx0301">
+				<img src="img/sq_jz_lb_photo1.png" class="l_jiazh0301le"/>
+				<div class="l_jiazh0301ri">
+					<p>娃娃脸wq<span>1小时前</span></p>
+					<p>这家水店服务特别好，送水速度快，水喝着也不错，而且还经济实惠。。。</p>
+				</div>
+			</div>
+			<div class="l_jiazhxx0301">
+				<img src="img/sq_jz_lb_photo1.png" class="l_jiazh0301le"/>
+				<div class="l_jiazh0301ri" style="border-bottom: none;">
+					<p>娃娃脸wq<span>1小时前</span></p>
+					<p>这家水店服务特别好，送水速度快，水喝着也不错，而且还经济实惠。。。</p>
+				</div>
+			</div>
+		</div>
+		<!--尾部-->
+		<div class="l_jiazhxxfoot">
+			<a href="">分享</a>
+			<a href="">与我联系</a>
+		</div>
+
+	</body>
+    <script src="jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var html=document.getElementsByTagName("html")[0];
+		var bod=document.getElementsByTagName("body")[0];
+		function getFontSize(){
+			var width=document.documentElement.clientWidth||document.body.clientWidth;
+			var fontSize=(100/640)*width;
+			return fontSize;
+		}
+		html.style.fontSize=getFontSize()+"px"; 
+		window.onload=function(){
+			html.style.fontSize=getFontSize()+"px";
+			bod.style.display='block';
+		}
+
+	</script>
+</html>
